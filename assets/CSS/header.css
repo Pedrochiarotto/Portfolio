@@ -1,0 +1,92 @@
+header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+header .mypicture{
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+}
+
+header .title{
+    text-align: center;
+    /*font-family: "Afacad Flux", sans-serif; */
+    font-family: "Neue Machine";
+    font-weight: 200;
+}
+
+.information{
+    display:flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.information a{
+    text-decoration: none;
+    color: #fff;
+}
+
+.information a:hover{
+    text-decoration: underline;
+}
+
+.information p{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 0.5rem;
+    font-size: 1.1rem;
+}
+
+.information p::before{
+    content: '';
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-image: url('../images/icons/job.svg') ;
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin-right: 0.5rem;
+}
+
+.information .job::before{
+    background-image: url('../images/icons/job.svg') ;
+}
+.information .phone::before{
+    background-image: url('../images/icons/whatsapp.svg') ;
+}
+.information .location::before{
+    background-image: url('../images/icons/Location.svg') ;
+}
+.information .email::before{
+    background-image: url('../images/icons/email.svg') ;
+}
+
+@media only screen and (min-width: 768px) {
+    header{
+        display: grid;
+        grid-template-areas: 
+        "mypicture title"
+        "mypicture information";
+    }
+
+    header .mypicture{
+        grid-area: mypicture;
+        margin: 0 auto;
+    }
+    
+    header .information{
+        grid-area: information;
+    }
+    
+    header .title{
+        grid-area: title;
+        text-align: start;
+        max-width: 400px;
+    }
+}
