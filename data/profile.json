@@ -1,0 +1,69 @@
+{
+  "name": "Pedro H Chiarotto",
+  "photo": "https://www.canva.com/design/DAGS6Ku5cQc/0loQY0Yf5L-fTt-rmmSV6Q/view?utm_content=DAGS6Ku5cQc&utm_campaign=designshare&utm_medium=link&utm_source=editor",
+  "job": "Estagiário",
+  "location": "Araras - SP",
+  "phone": "(16) 99755-4808",
+  "email": "phchiarotto@gmail.com",
+  "skills": {
+    "hardSkills": [
+      {
+        "name": "Nodejs",
+        "logo": "https://raw.githubusercontent.com/digitalinnovationone/js-developer-portfolio/main/data/imgs/nodejs.png"
+      },
+      {
+        "name": "CSS",
+        "logo": "https://raw.githubusercontent.com/digitalinnovationone/js-developer-portfolio/main/data/imgs/css.png"
+      },
+      {
+        "name": "HTML",
+        "logo": "https://raw.githubusercontent.com/digitalinnovationone/js-developer-portfolio/main/data/imgs/html.png"
+      },
+      {
+        "name": "Git",
+        "logo": "https://raw.githubusercontent.com/digitalinnovationone/js-developer-portfolio/main/data/imgs/git.png"
+      },
+      {
+        "name": "Github",
+        "logo": "https://raw.githubusercontent.com/digitalinnovationone/js-developer-portfolio/main/data/imgs/github.png"
+      },
+      {
+        "name": "JavaScript",
+        "logo": "https://raw.githubusercontent.com/digitalinnovationone/js-developer-portfolio/main/data/imgs/js.png"
+      }
+    ],
+    "softSkills": [
+      "Proatividade",
+      "Liderança",
+      "Trabalho em equipe",
+      "Flexibilidade",
+      "Organização",
+      "Boa comunicação"
+    ]
+  },
+  "languages": [
+    "Português-BR (Nativo)",
+    "Inglês (Intermediário)",
+    "Espanhol (Básico)"
+  ],
+
+  "portfolio": [
+    {
+      "name": "Curso Ministrado na DIO para a criação de uma Pokedex",
+      "url": "https://github.com/Pedrochiarotto/Pokedex",
+      "github": true
+    },
+    {
+      "name": "Curso Ministrado na DIO para a criação de uma página de portfolio",
+      "url": "https://github.com/Pedrochiarotto/js-developer-portfolio",
+      "github": true
+    }
+  ],
+  "professionalExperience": [
+    {
+      "name": "",
+      "period": "",
+      "description": ""
+    }  
+  ]
+}
