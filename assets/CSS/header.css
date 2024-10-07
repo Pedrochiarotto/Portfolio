@@ -1,92 +1,96 @@
-header{
+.header {
     display: flex;
     flex-direction: column;
     align-items: center;
     position: relative;
 }
 
-header .mypicture{
-    border-radius: 50%;
+.header::after {
+    content: '';
+    display: inline-block;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    width: 2rem;
+    height: 2rem;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-image: url('../img/icons/header.svg');
+}
+
+.header .photo {
     width: 200px;
     height: 200px;
+    border-radius: 50%;
 }
 
-header .title{
+.header .title {
+    font-family: 'Neue Machina';
     text-align: center;
-    /*font-family: "Afacad Flux", sans-serif; */
-    font-family: "Neue Machine";
-    font-weight: 200;
 }
 
-.information{
-    display:flex;
+.information {
+    display: flex;
     flex-direction: column;
     align-items: flex-start;
     width: 100%;
-    margin-bottom: 10px;
 }
 
-.information a{
-    text-decoration: none;
-    color: #fff;
-}
-
-.information a:hover{
-    text-decoration: underline;
-}
-
-.information p{
+.information p {
     display: flex;
     flex-direction: row;
     align-items: center;
-    margin: 0.5rem;
-    font-size: 1.1rem;
+    margin: .5rem;
+    font-size: 1.125rem;
 }
 
-.information p::before{
+.information p::before {
     content: '';
     display: inline-block;
-    width: 20px;
-    height: 20px;
-    background-image: url('../images/icons/job.svg') ;
+    width: 1rem;
+    height: 1rem;
     background-repeat: no-repeat;
     background-size: contain;
-    margin-right: 0.5rem;
+    margin-right: .5rem;
 }
 
-.information .job::before{
-    background-image: url('../images/icons/job.svg') ;
+.information .job::before {
+    background-image: url('../img/icons/job.svg');
 }
-.information .phone::before{
-    background-image: url('../images/icons/whatsapp.svg') ;
+
+.information .location::before {
+    background-image: url('../img/icons/location.svg');
 }
-.information .location::before{
-    background-image: url('../images/icons/Location.svg') ;
+
+.information .email::before {
+    background-image: url('../img/icons/email.svg');
 }
-.information .email::before{
-    background-image: url('../images/icons/email.svg') ;
+
+.information .phone::before {
+    background-image: url('../img/icons/phone.svg');
 }
 
 @media only screen and (min-width: 768px) {
-    header{
+    .header {
         display: grid;
-        grid-template-areas: 
-        "mypicture title"
-        "mypicture information";
+        grid-template-areas:
+            "photo title"
+            "photo information"
+        ;
     }
 
-    header .mypicture{
-        grid-area: mypicture;
+    .header .photo {
+        grid-area: photo;
         margin: 0 auto;
     }
-    
-    header .information{
-        grid-area: information;
-    }
-    
-    header .title{
+
+    .header .title {
         grid-area: title;
         text-align: start;
-        max-width: 400px;
+        max-width: 210px;
+    }
+
+    .header .information {
+        grid-area: information;
     }
 }

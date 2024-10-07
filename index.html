@@ -1,122 +1,120 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfólio Pedro Henrique Chiarotto</title>
-    <link rel="stylesheet" href="./assets/CSS/header.css">
-    <link rel="stylesheet" href="./assets/CSS/global.css">
-    <link rel="stylesheet" href="./assets/CSS/acordeon.css">
-    <link rel="stylesheet" href="./assets/CSS/languages.css">
-    <link rel="stylesheet" href="./assets/CSS/portfolio.css">
-    <link rel="stylesheet" href="./assets/CSS/experiencia.css">
-    <link rel="stylesheet" href="./assets/CSS/skils.css">
+    <title>Portifólio Renan J Paula</title>
 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+        integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-    <!-- Normalize -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap">
+
+    <link rel="stylesheet" href="assets/css/global.css">
+    <link rel="stylesheet" href="assets/css/header.css">
+    <link rel="stylesheet" href="assets/css/acordeon.css">
+    <link rel="stylesheet" href="assets/css/languages.css">
+    <link rel="stylesheet" href="assets/css/portfolio.css">
+    <link rel="stylesheet" href="assets/css/experience.css">
+    <link rel="stylesheet" href="assets/css/skills.css">
+    <link rel="stylesheet" href="assets/css/footer.css">
 </head>
+
 <body>
     <main class="main">
+        <header class="header">
+            <img src="assets/img/My_picture.jpg" alt="Foto de Perfil" class="photo" id="profile.photo">
 
-    <!-- Header -->
-        <header>
-            <img src="assets/images/My_picture.jpg" alt="Foto do Pedro Henrique Chiarotto" class= "mypicture">
+            <h1 class="title">
+                Olá, <br>eu sou <span id="profile.name">Carregando...</span>
+            </h1>
 
-            <h1 class="title">Olá,  <br> Eu sou o Pedro H. Chiarotto</h1>
-            
             <div class="information">
-                <p class="job">Estagiário</p>
-                <p class="location">Araras/SP</p>
-                <p class="phone"><a href="tell: (19) 9 9755-4808">(19) 9 9755-4808</a></p>
-                <p class="email"><a href="mailto:phchiarotto@gmail.com" target="_blank">phchiarotto@gmail.com</a></p>
+                <p class="job" id="profile.job">Carregando...</p>
+                <p class="location" id="profile.location">Carregando...</p>
+                <p class="phone">
+                    <a href="tel:(16) 9 9999-9999" id="profile.phone">Carregando...</a>
+                </p>
+                <p class="email">
+                    <a href="mailto:ex@mail.com" id="profile.email">carregando@mail.com</a>
+                </p>
             </div>
-
         </header>
 
-    <!-- Skills -->
-    <section class="acordeon">
-        <button class="trigger" type="button">
-             <h2>Skills</h2>
-        </button>
-        <div class="content">
-            <div class="skills">
-                <section class="tools">
-
-                    <h3>Habilidades profissionais</h3>
-                    <ul>
-                        <li>
-                            <img src="./assets/images/icons/nodejs.svg" alt="nodejs">
-                        </li>
-                        <li><img src="./assets/images/icons/css.svg" alt="Css"></li>
-                        <li><img src="assets/images/icons/Js.svg" alt="JavaScript"></li>
-                        <li><img src="assets/images/icons/githubIcon.svg" alt="Github"></li>
-                        <img src="assets/images/icons/git.svg" alt="Git">
-                    </ul>
-                </section>
-
-                <section class="personal">
-                    <h3>Habilidades Pessoais</h3>
-                    <ul>
-                        <li>Liderança</li>
-                        <li>Proatividade</li>
-                        <li>Trabalho em equipe</li>
-                        <li>Boa comunicação</li>
-                        <li>Ótima relação interpessoal</li>
-                        <li>Facilidade de aprendizado</li>
-                    </ul>
-                </section>
-            </div>
-        </div>
-    </section>
-    <!-- Idiomas -->
         <section class="acordeon">
             <button class="trigger" type="button">
-                 <h2>Idiomas</h2>
+                <h2>Skills</h2>
             </button>
+
             <div class="content">
-                <ul class="languages">
-                    <li>Portugues (Nativo)</li>
-                    <li>Ingles (Intermediário)</li>
-                    <li>Espanhol (Básico)</li>
+                <div class="skills">
+                    <section class="tools">
+                        <h3>Ferramentas:</h3>
+                        <ul id="profile.skills.hardSkills">
+                        </ul>
+                    </section>
+
+                    <section class="personal">
+                        <h3>Pessoal:</h3>
+                        <ul id="profile.skills.softSkills">
+                            <li>Carregando...</li>
+                            <li>Carregando...</li>
+                            <li>Carregando...</li>
+                        </ul>
+                    </section>
+                </div>
+            </div>
+        </section>
+
+        <section class="acordeon">
+            <button class="trigger" type="button">
+                <h2>Idiomas</h2>
+            </button>
+
+            <div class="content">
+                <ul class="languages" id="profile.languages">
+                    <li>Carregando...</li>
                 </ul>
             </div>
         </section>
 
-    <!--Portfolio-->
         <section class="acordeon">
             <button class="trigger" type="button">
                 <h2>Portfólio</h2>
             </button>
+
             <div class="content">
-                <ul class="portfolio">
-                    <li>
-                    <h3 class="title github">Criando uma Pokedéx com HTML,CSS e JavaScript</h3>
-                    <a href="https://github.com/Pedrochiarotto/Pokedex" target="_blank">Acessar Projeto</a>
-                    </li>
+                <ul class="portfolio" id="profile.portfolio">
                 </ul>
             </div>
         </section>
 
-    <!-- Experiencia Profissional-->
         <section class="acordeon">
             <button class="trigger" type="button">
-                 <h2>Experiencia Profissional</h2>
+                <h2>Experiência Profissional</h2>
             </button>
+
             <div class="content">
-                <ul class="experiencia">
-                    <li>
-                        <h3>Estagiário</h3>
-                        <span class="period">09/10/2024 - atual</span>
-                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quaerat quia nostrum voluptatibus, praesentium quidem ipsam suscipit voluptatem magnam explicabo magni error quos. Eius illo suscipit eligendi optio sit sint provident.</p>
-                    </li>
-                    
+                <ul class="experience" id="profile.professionalExperience">
                 </ul>
             </div>
         </section>
+
+        <footer>
+            <a href="https://www.dio.me/" target="_blank">
+                <img src="assets/img/dio.svg" alt="DIO">
+            </a>
+        </footer>
     </main>
 
-    <!--Import JS-->
-    <script src="./assets/JavaScript/acordeon.js"> </script>
+    <script src="assets/js/acordeon.js"></script>
+    <script src="assets/js/api.js"></script>
+    <script src="assets/js/main.js"></script>
 </body>
+
 </html>
